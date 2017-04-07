@@ -37,15 +37,15 @@ class Contact implements Nameable {
             $s .= $this->first_name;
         }
         if ($this->last_name) {
-            if (count($s) > 0) {
+            if (strlen($s) > 0) {
                 $s .= " ";
             }
             $s.= $this->last_name;
         }
         if ($this->phone_number) {
-            if (count($s) > 0) {
+            if (strlen($s) > 0) {
                 $s .= ": ";
-            }
+            } 
             else {
                 $s .= "Someone's Phone Number: ";
             }
